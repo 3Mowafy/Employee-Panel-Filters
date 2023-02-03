@@ -14,3 +14,5 @@ We also have filters panel, and the user can filter by the following:
                       o Less than a year
                       o From 1-3 years
                       o 3 years or above
+                      
+![Task](https://user-images.githubusercontent.com/98129284/216634576-50e1296b-e8f3-4673-b037-17dc12bf9140.png)
