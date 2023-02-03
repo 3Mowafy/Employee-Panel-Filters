@@ -1,0 +1,40 @@
+.container {
+  height: 100vh;
+
+  .sidenav {
+    padding: 0 20px;
+    width: 350px;
+    background: #eaeaea;
+  }
+
+  mat-form-field {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .formBtns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .delIcon {
+    margin-top: -10px;
+  }
+
+  .filterIcon {
+    font-size: 18px;
+  }
+
+  mat-icon {
+    overflow: visible;
+    width: 35px;
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 991px) {
+  .sidenav {
+    width: 300px !important;
+  }
+}

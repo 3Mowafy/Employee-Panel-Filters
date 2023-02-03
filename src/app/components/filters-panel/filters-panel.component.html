@@ -1,0 +1,82 @@
+<mat-sidenav-container class="container" autosize>
+  <mat-sidenav #drawer class="sidenav" mode="side" [fixedInViewport]="true">
+    <h2>Filters</h2>
+    <form [formGroup]="employeesFilter" (ngSubmit)="formFilter()">
+      <mat-form-field appearance="fill">
+        <mat-label>Name</mat-label>
+        <input matInput formControlName="name" />
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Joining Date</mat-label>
+        <input
+          matInput
+          [matDatepicker]="picker"
+          formControlName="employmentDate"
+        />
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle
+          matIconSuffix
+          [for]="picker"
+        ></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Experience</mat-label>
+        <mat-select disableRipple formControlName="experience">
+          <mat-option value="1">Less than a year</mat-option>
+          <mat-option value="2">From 1-3 years</mat-option>
+          <mat-option value="3">3 years or above</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Salary</mat-label>
+        <input type="number" matInput formControlName="salary" />
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Department</mat-label>
+        <mat-select formControlName="department" multiple>
+          <mat-option *ngFor="let topping of toppingList" [value]="topping">{{
+            topping
+          }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <div class="formBtns">
+        <button mat-fab color="warn" (click)="resetFilter()">
+          <mat-icon class="delIcon">delete</mat-icon>
+        </button>
+        <button
+          mat-raised-button
+          color="primary"
+          class="filterIcon"
+          type="submit"
+        >
+          Filter
+        </button>
+      </div>
+    </form>
+  </mat-sidenav>
+
+  <div class="sidenav-content">
+    <mat-icon
+      title="Open Filters Panel"
+      mat-mini-fab
+      color="primary"
+      (click)="drawer.toggle()"
+      *ngIf="!drawer.opened"
+      >menu</mat-icon
+    >
+    <mat-icon
+      title="Close Filters Panel"
+      mat-mini-fab
+      color="warn"
+      (click)="drawer.toggle()"
+      *ngIf="drawer.opened"
+      >close</mat-icon
+    >
+  </div>
+</mat-sidenav-container>

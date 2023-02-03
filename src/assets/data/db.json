@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Mohamed",
+    "employmentDate": "12/01/2022",
+    "salary": 10000,
+    "experience": "One Year",
+    "department": "Finance"
+  },
+  {
+    "name": "Ahmed",
+    "employmentDate": "17/04/2020",
+    "salary": 12000,
+    "experience": "3 years",
+    "department": "iT"
+  },
+  {
+    "name": "Ibrhem",
+    "employmentDate": "12/06/2018",
+    "salary": 25000,
+    "experience": "5 Years",
+    "department": "Front End"
+  },
+  {
+    "name": "George",
+    "employmentDate": "01/01/2021",
+    "salary": 15000,
+    "experience": "2 years",
+    "department": "Back End"
+  },
+  {
+    "name": "Mohnnad",
+    "employmentDate": "12/06/2022",
+    "salary": 7000,
+    "experience": "Less than a year",
+    "department": "iT"
+  },
+  {
+    "name": "Hamdy",
+    "employmentDate": "17/04/2022",
+    "salary": 9000,
+    "experience": "Less than a year",
+    "department": "Finance"
+  },
+  {
+    "name": "Michael",
+    "employmentDate": "12/06/2018",
+    "salary": 17000,
+    "experience": "5 Years",
+    "department": "Front End"
+  },
+  {
+    "name": "Khaled",
+    "employmentDate": "01/01/2021",
+    "salary": 30000,
+    "experience": "6 years",
+    "department": "Back End"
+  }
+]
